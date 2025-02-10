@@ -49,6 +49,11 @@ h2 {
     border-radius: 8px;
 }
 
+.icon {
+    font-size: 2rem;
+    color: #114170;
+}
+
 .footer {
     background-color: #114170;
     color: #fff;
@@ -56,6 +61,8 @@ h2 {
     text-align: center;
 }
 
-.footer a{
+.footer-icon {
+    font-size: 2rem;
     color: #fff;
+    margin: 3px;
 }
