@@ -54,6 +54,38 @@ h2 {
     color: #114170;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    position: relative;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #114170;
+    color: #fff;
+    position: relative;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #BECEED;
+}
+
 .footer {
     background-color: #114170;
     color: #fff;
