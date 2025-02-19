@@ -20,13 +20,14 @@ body {
 
 /* Estilos de la Barra de Navegacion */
 .navbar {
-  background-color: rgba(17, 65, 112, 0.95); /* Azul medio con transparencia */
-  border-bottom: 2px solid #BECEED; /* Línea sutil para separación */
+  min-height: 80px; 
+  padding: 15px 0;
+  background-color: rgba(17, 65, 112, 0.95);
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: #BECEED !important; /* Texto en azul claro */
+  color: #BECEED !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -92,11 +93,10 @@ body {
 
 /* Estilos del Footer */
 footer {
-  background-color: #114170; /* Azul medio igual a la navbar */
+  background-color: #114170;
   color: #BECEED;
   text-align: center;
   padding: 15px 0;
-  border-top: 2px solid #BECEED; /* Línea superior para separar */
 }
 
 footer a {
@@ -105,7 +105,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #820000; /* Rojo intenso al pasar el mouse */
+  color: #820000; 
 }
 
 /* Estilos responsivos */
