@@ -31,21 +31,34 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #820000 !important; /* Rojo intenso al pasar el mouse */
+  color: #820000 !important;
 }
 
-/* ---------------------------
-   Hero Section
----------------------------- */
+/* Hero Section */
 .hero {
-  min-height: 100vh;
-  background: linear-gradient(rgba(11, 36, 71, 0.6), rgba(11, 36, 71, 0.6)), 
-              url("imagenes/logos/logo.png") center/cover no-repeat;
   position: relative;
+  min-height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
 }
 
 /* Fondo degradado oscuro para secciones con estilo escenario */
@@ -68,18 +81,52 @@ body {
   box-shadow: 0 8px 20px rgba(190, 206, 237, 0.3);
 }
 
+/* Ajustes para el carrusel */
+#carouselGaleria {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#carouselGaleria .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; 
+  object-fit: contain; 
+  border-radius: 8px;
+}
+
+/* Ajustar los botones de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  filter: none;
+  opacity: 1; 
+}
+
 /* Seccion Contacto */
 #contacto .form-control {
   border-radius: 8px;
-  border: 1px solid #BECEED;
+  border: 1px solid #114170; 
+  color: #114170;
 }
+
+#contacto .form-label {
+  color: #114170; 
+  font-weight: bold;
+}
+
+#contacto .form-control:focus {
+  border-color: #114170;
+  box-shadow: 0 0 5px rgba(17, 65, 112, 0.5);
+}
+
 #contacto button {
-  background-color: #490505;
+  background-color: #114170;
   border: none;
   color: #BECEED;
 }
+
 #contacto button:hover {
-  background-color: #820000;
+  background-color: #0B2447;
 }
 
 /* Seccion Donaciones */

@@ -39,6 +39,10 @@
 
   <!-- Seccion Inicio -->
   <section id="inicio" class="hero d-flex align-items-center text-white">
+    <video autoplay loop muted playsinline class="video-bg">
+      <source src="videos/bienvenida-musares.mp4" type="video/mp4">
+      Tu navegador no soporta la reproduccion de videos.
+    </video>
     <div class="container text-center">
       <h1 class="display-3 fw-bold mb-3">Bienvenidos a Musares</h1>
       <p class="lead mb-4">Celebramos el arte y la cultura y procuramos el bienestar de nuestros artistas mediante la realización de festivales, talleres, eventos y cursos.</p>
@@ -88,19 +92,29 @@
   <section id="galeria" class="py-5 text-white bg-dark-gradient">
     <div class="container">
       <h2 class="section-title text-center mb-5">Galería</h2>
-      <div class="row g-4">
-        <div class="col-sm-6 col-md-4">
-          <img src="imagenes/eventos/evento3.jpg" alt="Evento 1" class="img-fluid rounded gallery-img"/>
+      <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/evento1.jpg" class="d-block w-100 rounded" alt="Evento 1">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/evento2.jpg" class="d-block w-100 rounded" alt="Evento 2">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/evento3.jpg" class="d-block w-100 rounded" alt="Evento 3">
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <img src="imagenes/eventos/evento3.jpg" alt="Evento 2" class="img-fluid rounded gallery-img"/>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <img src="imagenes/eventos/evento3.jpg" alt="Evento 3" class="img-fluid rounded gallery-img"/>
-        </div>
+        <!-- Controles del Carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
   </section>
+
 
   <!-- Seccion Contacto -->
   <section id="contacto" class="py-5 bg-light">
