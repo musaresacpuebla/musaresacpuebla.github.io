@@ -9,7 +9,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #0B2447;
   color: #BECEED;
-  padding-top: 70px;
 }
 
 .section-title {
@@ -68,7 +67,22 @@ body {
 
 /* Seccion Destacado */
 #destacado h3 {
-  color: #BECEED;
+  color: #114170
+}
+
+#quienes-somos img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(190, 206, 237, 0.2);
+}
+
+/* Imágenes en tarjetas de Destacado */
+.card-img-top {
+  height: auto; /* Permite que la imagen se ajuste naturalmente */
+  max-height: 300px; /* Ajusta la altura máxima según sea necesario */
+  object-fit: contain; /* Muestra la imagen completa sin recortar */
+  background-color: #fff; /* Evita espacios vacíos visibles */
+  padding: 10px; /* Añade espacio alrededor de la imagen */
 }
 
 /* Seccion Galeria */
