@@ -30,8 +30,8 @@ body {
   color: #820000 !important;
 }
 
-/* Hero Section */
-.hero {
+/* Estilos de la Seccion Inicio */
+.inicio {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
@@ -57,11 +57,11 @@ body {
   z-index: 2;
 }
 
-/* Fondo degradado oscuro para secciones con estilo escenario */
 .bg-dark-gradient {
   background: linear-gradient(135deg, #0B2447 0%, #114170 100%);
 }
 
+/* Estilos de la Seccion Codigo de Etica */
 #codigo-etica {
   background-color: #f8f9fa; 
   padding: 60px 0;
@@ -88,7 +88,7 @@ body {
   background-color: #114170;
 }
 
-/* Seccion Destacado */
+/* Estilos de la Seccion Destacado */
 #destacado h3 {
   color: #114170
 }
@@ -99,7 +99,6 @@ body {
   box-shadow: 0 5px 15px rgba(190, 206, 237, 0.2);
 }
 
-/* Imagenes en tarjetas de la seccion Destacado */
 .card-img-top {
   height: auto; 
   object-fit: contain; 
@@ -107,19 +106,22 @@ body {
   padding: 10px; 
 }
 
-/* Seccion Galeria */
+/* Estilos de la Seccion Galeria */
 .gallery-img {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .gallery-img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(190, 206, 237, 0.3);
 }
+
 #carouselGaleria {
   max-width: 800px;
   margin: 0 auto;
 }
+
 #carouselGaleria .carousel-item img {
   width: 100%;
   height: auto;
@@ -127,13 +129,14 @@ body {
   object-fit: contain; 
   border-radius: 8px;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   filter: none;
   opacity: 1; 
 }
 
-/* Seccion Contacto */
+/* Estilos de la Seccion Contacto */
 #contacto .form-control {
   border-radius: 8px;
   border: 1px solid #114170; 
@@ -160,7 +163,7 @@ body {
   background-color: #0B2447;
 }
 
-/* Seccion Donaciones */
+/* Estilos de la Seccion Donaciones */
 #donaciones .btn {
   background-color: #820000;
   border: none;
@@ -188,10 +191,15 @@ footer a:hover {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-  .hero {
+  .inicio {
     min-height: 60vh;
   }
   .section-title {
     font-size: 2rem;
+  }
+  #quienes-somos .row,
+  #mision .row,
+  #vision .row {
+    flex-direction: column-reverse;
   }
 }
