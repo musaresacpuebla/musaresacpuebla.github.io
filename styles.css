@@ -11,11 +11,12 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 2.5rem;
-  color: #BECEED;
+  color: #FFFFFF;
 }
 
 /* Estilos de la Barra de Navegacion */
 .navbar {
+  color: #FFFFFF !important;
   min-height: 80px; 
   padding: 15px 0;
   background-color: rgba(17, 65, 112, 0.95);
@@ -39,6 +40,17 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.inicio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece el video */
+  z-index: 1;
 }
 
 .video-bg {
@@ -99,6 +111,14 @@ body {
   box-shadow: 0 5px 15px rgba(190, 206, 237, 0.2);
 }
 
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(190, 206, 237, 0.4);
+}
+
 .card-img-top {
   height: auto; 
   object-fit: contain; 
@@ -137,6 +157,18 @@ body {
 }
 
 /* Estilos de la Seccion Contacto */
+#contacto .form-control {
+  transition: all 0.3s ease;
+}
+#contacto .form-control:focus {
+  transform: scale(1.02);
+  border-color: #820000;
+  box-shadow: 0 0 10px rgba(130, 0, 0, 0.5);
+}
+#contacto button:active {
+  transform: scale(0.98);
+}
+
 #contacto .form-control {
   border-radius: 8px;
   border: 1px solid #114170; 
