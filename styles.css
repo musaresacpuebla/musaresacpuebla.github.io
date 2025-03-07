@@ -204,6 +204,22 @@ body {
   background-color: #490505;
 }
 
+/* Estilos de la Seccion Como Ayudar */
+.ayuda-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.ayuda-section h3 {
+  color: #114170;
+  font-weight: bold;
+}
+
+.ayuda-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 /* Estilos del Footer */
 footer {
   background-color: #114170;
